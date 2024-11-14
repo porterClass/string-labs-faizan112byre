@@ -14,11 +14,15 @@ replaceString("Python is difficult.", "difficult", "really easy")
 #CODE 
 #YOUR
 #FUNCTION BELOW HERE
-
-
-
-
-
+def replaceString(org, target, replace):
+  first_tar = org.find(target)
+  last_char_tar = target[-1]
+  last_tar = org.find(last_char_tar)
+  first = org[0 : first_tar]
+  last = org[last_tar + 1 :]
+  ans = first + replace + last
+  return ans
+print(replaceString("Hello World!", "Hello", "Goodbye"))
 
 
 
@@ -30,6 +34,7 @@ replaceString("Python is difficult.", "difficult", "really easy")
 
 
 """
+
 ++++++++++++++++++++
 don't code below here
 ++++++++++++++++++++++

@@ -13,15 +13,20 @@ first_last(last_first("Bugs Bunny"))  # returns "Bugs Bunny"
 #YOUR
 #FUNCTION BELOW HERE
 
-
-
-
-
-
-
-
-
-
+def last_first(string):
+  space = string.find(" ")
+  last = string[space + 1 :]
+  first = string[0 : space]
+  ans = last + ", " + first
+  return ans
+def first_last(string):
+  comma = string.find(",")
+  space = string.find(" ")
+  last = string[0 : comma]
+  first = string[space + 1 :]
+  ans = first + " " + last
+  return ans
+print(first_last("Doe, John"))
 
 
 

@@ -11,9 +11,14 @@ count_words("Count the number of words in this sentence.")  # returns 7
 #CODE 
 #YOUR
 #FUNCTION BELOW HERE
-
-
-
+def count_words(string):
+  ans = 0
+  if string != "":
+    ans += 1
+    for let in string:
+      if let == " ":
+        ans += 1
+  return ans 
 
 
 

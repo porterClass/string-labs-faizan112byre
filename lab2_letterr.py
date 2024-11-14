@@ -11,10 +11,11 @@ letterr("World")  # returns "First letter is W and last letter is d"
 #YOUR
 #FUNCTION BELOW HERE
 
-
-
-
-
+def letterr(String):
+  first = String[0]
+  Last = String[-1]
+  ans = "First letter is " + first + " and last letter is " + Last
+  return ans
 
 
 
